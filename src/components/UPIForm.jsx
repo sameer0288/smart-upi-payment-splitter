@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { evaluate } from 'mathjs'; 
 import "./UPIForm.css";
 
 const UPIForm = () => {
@@ -8,14 +9,15 @@ const UPIForm = () => {
   const [showSuccess, setShowSuccess] = useState(false);
   const inputRef = useRef(null);
 
-  const evaluateExpression = (expr) => {
-    try {
-      const result = eval(expr.replace(/[^-()\d/*+.]/g, ""));
-      setCalculatedAmount(result || 0);
-    } catch {
-      setCalculatedAmount(0);
-    }
-  };
+const evaluateExpression = (expr) => {
+  try {
+    const result = evaluate(expr);
+    setCalculatedAmount(result || 0);
+  } catch {
+    setCalculatedAmount(0);
+  }
+};
+  
 
   const handleExpressionChange = (e) => {
     const value = e.target.value;
