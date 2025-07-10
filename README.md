@@ -18,8 +18,7 @@ A smart and user-friendly UPI payment input built with ReactJS that lets users d
 
 ## 🚀 Live Demo
 
-👉 [Click here to view the live app](https://smart-upi-splitter.netlify.app)  
-*(Replace with your real Netlify URL)*
+👉 [Click here to view the live app](https://smart-upi-splitter.netlify.app/)  
 
 ---
 
