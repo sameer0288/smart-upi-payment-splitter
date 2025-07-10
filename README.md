@@ -52,7 +52,7 @@ Useful for:
 ## 📦 Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/smart-upi-payment-splitter.git
+git clone https://github.com/sameer0288/smart-upi-payment-splitter.git
 cd smart-upi-payment-splitter
 npm install
 npm start
