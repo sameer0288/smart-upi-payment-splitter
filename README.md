@@ -25,7 +25,7 @@ A smart and user-friendly UPI payment input built with ReactJS that lets users d
 
 ## 📸 Preview
 
-![App Preview](./src/images/screenshot1.png) 
+![App Preview](./src/images/screenshot.png) 
 ![Flow Preview](./src/images/screenshot2.png)   
 ![Success Preview](./src/images/screenshot3.png)
 
