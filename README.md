@@ -56,3 +56,12 @@ git clone https://github.com/sameer0288/smart-upi-payment-splitter.git
 cd smart-upi-payment-splitter
 npm install
 npm start
+
+
+📜 License
+MIT License – use it freely for personal or professional projects!
+
+🤝 Let's Connect
+💼 LinkedIn – 👉 [Sameer Ali](https://www.linkedin.com/in/sameer0288)  
+
+🌐 Portfolio – 👉 [Sameer Ali](https://sameer-portfolio0288.netlify.app/)  
