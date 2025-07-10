@@ -1,0 +1,173 @@
+.upi-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+  background: #cfe3f8;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+}
+
+input {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.result {
+  margin: 0;
+  font-weight: bold;
+  color: #0a8754;
+}
+
+.pay-btn {
+  padding: 0.9rem;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pay-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pay-btn:hover:enabled {
+  background-color: #3700b3;
+}
+
+.amount-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.amount-input {
+  flex: 1;
+  padding: 0.7rem;
+  padding-right: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.plus-button {
+  position: absolute;
+  right: 0.5rem;
+  background-color: #eee;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plus-button:hover {
+  background-color: #ddd;
+}
+
+.success-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #0a8754;
+  animation: fadeIn 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.success-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #0a8754;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.success-checkmark {
+  width: 25px;
+  height: 50px;
+  border-right: 5px solid #0a8754;
+  border-bottom: 5px solid #0a8754;
+  transform: rotate(45deg);
+  animation: drawCheck 0.5s ease-out forwards;
+}
+
+@keyframes drawCheck {
+  from {
+    height: 0;
+    width: 0;
+  }
+  to {
+    height: 50px;
+    width: 25px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.success-message {
+  text-align: center;
+  margin-top: 1rem;
+}
+.success-message h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0a8754;
+}
+.success-message p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+.success-message button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.success-message button:hover {
+  background-color: #3700b3;
+}
+
